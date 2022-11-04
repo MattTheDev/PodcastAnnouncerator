@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-PodcastAnnouncerator-F5AF7888-6B7C-49CD-B313-DA88FD416FD6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="System.ServiceModel.Syndication" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PodcastAnnouncerator.Accessors\PodcastAnnouncerator.Accessors.csproj" />
+    <ProjectReference Include="..\PodcastAnnouncerator.Shared\PodcastAnnouncerator.Shared.csproj" />
+  </ItemGroup>
+</Project>
